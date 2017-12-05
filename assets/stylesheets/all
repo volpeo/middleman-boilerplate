@@ -1,0 +1,50 @@
+html, body {
+  min-height: 100vh; }
+
+body {
+  background: #fbc547;
+  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  margin: 0; }
+
+.intro {
+  flex: 1;
+  max-width: 90%;
+  margin: auto; }
+
+.logo {
+  width: 90%;
+  max-width: 230px; }
+
+h1 {
+  font-weight: normal;
+  font-size: 35px;
+  font-weight: 600;
+  color: white; }
+
+.tagline {
+  color: rgba(0, 0, 0, 0.45);
+  max-width: 630px;
+  margin: auto;
+  font-size: 22px; }
+
+.actions {
+  padding-top: 30px; }
+
+.button {
+  color: #5f636f;
+  border: 1px solid #5f636f;
+  padding: 10px 12px;
+  border-radius: 3px;
+  text-decoration: none;
+  transition: all ease 200ms; }
+  .button:after {
+    content: "\25B6";
+    margin-left: 5px;
+    transform: translate(0, 0); }
+  .button:hover {
+    border: 1px solid #303238;
+    color: #303238;
+    background: rgba(48, 50, 56, 0.1); }
