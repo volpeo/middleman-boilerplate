@@ -1,8 +1,4 @@
 # encoding: utf-8
-
-page '/index.html', layout: false
-page '/second.html', layout: false
-
 #
 # Use webpack for assets
 #
@@ -19,10 +15,21 @@ end
 
 set :css_dir, 'assets/stylesheets'
 set :js_dir, 'assets/javascript'
-set :images_dir, 'images'
+set :images_dir, 'assets/images'
+set :fonts_dir,   'assets/fonts'
+
+activate :autoprefixer
+activate :protect_emails
 
 # Build-specific configuration
 configure :build do
   # Enable cache buster (except for images)
   activate :asset_hash, ignore: [/\.jpg\Z/, /\.png\Z/]
+  set :relative_links, true
+end
+
+activate :deploy do |deploy|
+  deploy.deploy_method  = :git
+  deploy.branch         = 'gh-pages'
+  deploy.build_before   = true
 end
