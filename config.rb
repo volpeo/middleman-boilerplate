@@ -26,6 +26,7 @@ configure :build do
   # Enable cache buster (except for images)
   activate :asset_hash, ignore: [/\.jpg\Z/, /\.png\Z/]
   set :relative_links, true
+  activate :relative_assets
 end
 
 activate :deploy do |deploy|
