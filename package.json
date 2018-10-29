@@ -28,6 +28,7 @@
   "dependencies": {
     "d3": "^4.5.0",
     "jquery": "^3.2.1",
-    "sanitize.css": "^4.1.0"
+    "sanitize.css": "^4.1.0",
+    "sweetalert": "^2.1.2"
   }
 }
